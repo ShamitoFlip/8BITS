@@ -1,0 +1,805 @@
+/*-----------*/
+/*Font import*/
+/*-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Jersey+10&family=Press+Start+2P&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/*------------------------------*/
+/* Reset de estilos por defecto */
+/*------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1.6;
+    background: radial-gradient(circle, #333 0%, #000 100%);
+}
+
+/*------------------*/
+/* STYLE HEADER - CSS */
+/*------------------*/
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: radial-gradient(circle, #6A0DAD 0%, #000 90%);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    flex-wrap: wrap;
+    text-shadow: 1px 1px 2px black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+
+.content ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+
+.content a img {
+    width: 100px;
+    padding: 10px;
+}
+
+.content img:hover {
+    transform: scale(1.05);
+}
+
+.content ul li {
+    margin: 0 15px;
+    font-size: 19px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.content ul li:hover {
+    transform: scale(1.1);
+}
+
+.content ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.content ul li a:hover {
+    color: #6A0DAD;
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.content2 input {
+    width: 250px;
+    height: 40px;
+    padding: 8px;
+    border: 2px solid #6A0DAD;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.content2 input:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
+.content2 button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    background-color: #6A0DAD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.content2 button:hover {
+    background-color: #540b91;
+    transform: scale(1.05);
+}
+
+.content2 a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 19px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.content2 a:hover {
+    color: #6A0DAD;
+    transform: scale(1.1);
+}
+
+
+/*----------------*/
+/* STYLE MENU - CSS */
+/*----------------*/
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.menu-content-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: radial-gradient(circle, #6A0DAD 0%, #000 90%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+}
+
+
+
+/*-------------------*/
+/*STYLE galeria - CSS*/
+/*-------------------*/
+.contenedor{
+    background:radial-gradient(circle, #6A0DAD 0%,#000 90%); /* Degradado radial */
+    justify-content: center;
+    height: auto;
+    text-align: center;
+    font-size: 0px;
+    font-weight: bolder;
+    padding: 0px;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.contenedor:hover{
+    font-size: 16px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1); /* Sombra */
+    padding-top: 5px
+   
+}
+
+.galeria-imagenes{
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 1920px;
+    height: 294px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: 0px;
+    transition: all 0.3 ease;
+   
+}
+.galeria-imagenes:hover{
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: baseline;
+    transform: scale(1);
+}
+
+.galeria-imagenes a{
+    width: 100%;
+    height: auto; /* para que no quede fija en 294px */
+    flex-wrap: wrap;
+    gap: 10px; /* opcional para separar las imágenes */
+    margin: 0;
+    padding: 0;
+    border-radius: 0%;
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 1;
+    filter: grayscale(0.9);
+    transition: all 0.3s ease;
+}
+.galeria-imagenes a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    filter: grayscale(0.9) brightness(0.8); /* Efecto de escala de grises y brillo */
+}
+.galeria-imagenes a img:hover{
+    filter: grayscale(0) brightness(1); /* Efecto de escala de grises y brillo */
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el mouse */
+    transition: all 0.3s ease;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1); /* Sombra */
+    }
+.galeria-imagenes a:hover{
+    filter: grayscale(0);
+    width: 1%;
+    height: auto;
+    border-radius: 10%;
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1);
+    padding: 20px;
+    
+}
+
+
+/*-------------------*/
+/* STYLE ARTICLE - CSS */
+/*-------------------*/
+article {
+    width: 100%;
+    max-width: 1800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* Estilos para el título principal del artículo */
+article h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffddff;
+}
+
+/* Estilo para cada sección del artículo */
+article section {
+    margin-bottom: 20px;
+    margin-top: 20px;;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Estilos para los subtítulos */
+article h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffbbff;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los párrafos */
+article p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+/* Estilo para las filas de cartas */
+.card-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-rows .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-rows .card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 400px; /* Ancho máximo de la tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-rows .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card-rows .card h4 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffbbff;
+    margin-bottom: 10px;
+}
+
+.card-rows .card p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.card-rows .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 1);
+}
+/* Estilo del boton */
+.boxbutton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0; /* Margen superior e inferior */
+    padding:20px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Sombra */
+    color: whitesmoke;
+    font-family: "Ubuntu", sans-serif;
+    width: 100%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.boxbutton h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffbbff;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.boxbutton h4 {
+    font-size:30px;
+    font-weight: bold;
+    color: #ffbbff;/* Centra el texto horizontalmente */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.boxbutton p {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+.boxbutton button {
+    padding: 10px 15px;
+    background-color: #6A0DAD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boxbutton button:hover {
+    background-color: #540b91;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 1);
+}
+
+.boxbutton button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.boxbutton button a:hover {
+    color: #ffbbff;
+}
+
+
+
+
+/* Estilo para las tarjetas de noticias */
+.news-section {
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-section section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.news-cards .card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    flex: 1 1 calc(33.333% - 20px); /* 3 cartas por fila */
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    height: 405px;
+}
+
+
+.news-cards .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.news-cards .card h4 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffbbff;
+    margin-bottom: 10px;
+}
+
+.news-cards .card p {
+    text-align: justify;
+    font-size: 16px;
+    color: #ddd;
+    
+}
+.news-cards p span{
+    color: #6A0DAD;
+    font-weight: bolder;
+}
+
+.news-cards .card p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.news-cards .card:hover {
+    border:#ffbbff solid 1px;
+    overflow: visible;
+    height: auto;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 1);
+}
+
+
+
+/* Estilo del boton */
+.boxbutton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0; /* Margen superior e inferior */
+    padding:20px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Sombra */
+    color: whitesmoke;
+    font-family: "Ubuntu", sans-serif;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.boxbutton h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffbbff;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.boxbutton h4 {
+    font-size:30px;
+    font-weight: bold;
+    color: #ffbbff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.boxbutton p {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+.boxbutton button {
+    padding: 10px 15px;
+    background-color: #6A0DAD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*-------*/
+/* ASIDE */
+/* ----- */
+aside.reviews-section {
+    width: 100%;
+    max-width: 1500px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    color: whitesmoke;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+aside.reviews-section h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffbbff;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+aside.reviews-section .comment-section {
+    margin-bottom: 20px;
+}
+
+aside.reviews-section label {
+    display: block;
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 5px;
+}
+
+aside.reviews-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #6A0DAD;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: whitesmoke;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+aside.reviews-section textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
+aside.reviews-section button {
+    padding: 8px 12px;
+    background-color: #6A0DAD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+aside.reviews-section button:hover {
+    background-color: #540b91;
+    transform: scale(1.05);
+}
+
+aside.reviews-section .review {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+aside.reviews-section .review h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffbbff;
+    margin-bottom: 5px;
+}
+
+aside.reviews-section .review p {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+aside.reviews-section .reply-section {
+    margin-top: 10px;
+}
+
+aside.reviews-section .reply-section label {
+    display: block;
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 5px;
+}
+
+aside.reviews-section .reply-section textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #6A0DAD;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: whitesmoke;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+aside.reviews-section .reply-section textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
+aside.reviews-section .reply-section button {
+    padding: 6px 10px;
+    background-color: #6A0DAD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+aside.reviews-section .reply-section button:hover {
+    background-color: #540b91;
+    transform: scale(1.05);
+}
+
+/*-------------------*/
+/* STYLE FOOTER - CSS */
+/*-------------------*/
+footer.footer {
+    background: radial-gradient(circle, #6A0DAD 0%, #000 90%);
+    color: whitesmoke;
+    padding: 40px 20px;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1); /* Sombra */
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer; /* Aparece el cursor */
+}
+
+footer .container {
+    max-width: 1920px;
+    min-width: 320 ;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    cursor: pointer; /* Aparece el cursor */
+}
+
+/* Estilo para los títulos de las secciones del footer */
+footer h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffddff;
+    margin-bottom: 15px;
+    transition: color 0.5s ease, transform 0.5s ease;
+    cursor: pointer; /* Aparece el cursor */
+}
+
+/* Estilo para los textos y enlaces dentro del footer */
+footer p, footer a {
+    font-size: 16px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.5s ease, transform 0.5s ease;
+    cursor: pointer; /* Aparece el cursor */
+}
+
+footer a:hover {
+    color: #6A0DAD;
+    transform: scale(1.05);
+}
+
+/* Estilo para las listas de enlaces rápidos */
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    cursor: pointer; /* Aparece el cursor */
+}
+
+/* Efecto hover para los elementos de la lista */
+footer ul li:hover {
+    transform: scale(1.05);
+    background-color: rgba(106, 13, 173, 0.1);
+    font-weight: bolder;
+}
+/* Estilo para íconos en las secciones de Últimas Noticias y Contacto */
+footer .news-contact-container a i,
+footer .text-white i {
+    font-size: 20px;
+    margin-right: 10px;
+    transition: transform 0.5s ease, color 0.5s ease;
+    cursor: pointer; /* Aparece el cursor */
+}
+
+footer .text-white i:hover {
+    color: #6A0DAD;
+    transform: scale(1.2);
+}
+
+/* Línea divisoria en el footer */
+footer hr {
+    border: 1px solid #6A0DAD;
+    margin: 20px 0;
+    transition: border-color 0.5s ease;
+    cursor: pointer; /* Aparece el cursor */
+}
+
+/* Estilo para el texto centrado en la parte inferior del footer */
+footer .text-center p {
+    font-size: 14px;
+    margin: 5px 0;
+    transition: color 0.5s ease;
+    cursor: pointer; /* Aparece el cursor */
+}
+
+/* Estilo para enlaces en la parte inferior del footer */
+footer .text-center a {
+    font-size: 14px;
+    color: #ffbbff;
+    transition: color 0.5s ease, transform 0.5s ease;
+    cursor: pointer; /* Aparece el cursor */
+}
+
+footer .text-center a:hover {
+    color: #6A0DAD;
+    transform: scale(1.1);
+}
+
+/*Pagina 2*/
