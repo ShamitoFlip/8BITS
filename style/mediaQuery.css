@@ -1,0 +1,396 @@
+/* ============================= */
+/*      MEDIA QUERIES - PAG 1    */
+/* ============================= */
+
+/*---------------------------------*/
+/* Para pantallas menores a 1440px */
+/*---------------------------------*/
+@media (max-width: 1440px) {
+    .contenedor,
+    .galeria-imagenes {
+        width: 100%;
+    }
+    .menu-content-1 {
+        width: 1440px;
+        overflow: hidden;
+    }
+
+}
+
+/*---------------------------------*/
+/* Para pantallas menores a 1200px */
+/*---------------------------------*/
+@media (max-width: 1200px) {
+    .contenedor,
+    .galeria-imagenes {
+        width: 100%;
+    }
+
+    .news-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Optional: Adjust spacing between cards */
+    }
+
+    .news-cards .card {
+        flex: 1 1 calc(50% - 20px); /* 2 cartas por fila */
+    }
+}
+
+/*---------------------------------*/
+/* Para pantallas menores a 1024px */
+/*---------------------------------*/
+@media (max-width: 1024px) {
+    .menu-content-1 {
+        width: 1024px;
+        overflow: hidden;
+    }
+    .content{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 70%;
+    }
+    .content2{
+        width: 30%;  
+    }
+    .content ul li {
+        font-size: 17px;    
+    }
+    .content2 input {
+        width: 160px;
+    }
+    .galeria-imagenes {
+        justify-content: center;
+        height: auto;
+    }
+    .galeria-imagenes a {
+        flex-basis: 30%;
+        padding: 10px;
+        flex: 1 1 calc(24% - 20px); /* 2 cartas por fila */
+    }
+
+    .card {
+        display: flex;
+        flex: 1 1 calc(50% - 20px); /* 2 cartas por fila */
+    }
+    .boxbutton {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenedor-juego {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contenedor-juego .game-card-detail {
+        max-width: 90%;
+    }
+    .contenedor-juego iframe {
+        max-width: 90%;
+    }
+    .contenedor-juego .game-card-detail p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+/*--------------------------------*/
+/* Para pantallas menores a 768px */
+/*--------------------------------*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content, .content2 {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .content ul {
+        justify-content: center;
+        
+    }
+    .menu-content-1 {
+        flex-direction: column;
+        text-align: center;
+        width: 768px;
+        overflow: hidden;
+    }
+    .menu-content-1 video {
+        width: 768px;
+    }
+    .galeria-imagenes a {
+        flex-basis: 45%;
+        flex-basis: 100%;
+        display: flex;
+        flex: 1 1 calc(24% - 20px); /* 2 cartas por fila */
+    }
+
+    .card {
+        display: flex;
+        flex: 1 1 calc(50% - 20px); /* 2 cartas por fila */
+    }
+    .boxbutton h3 {
+        font-size: 18px;
+    }
+
+    .boxbutton h4 {
+        font-size: 24px;
+    }
+
+    .boxbutton p,
+    .boxbutton button {
+        font-size: 14px;
+    }
+
+    aside.reviews-section {
+        font-size: 16px;
+    }
+
+    aside.reviews-section .review h4 {
+        font-size: 18px;
+    }
+
+    aside.reviews-section .review p,
+    aside.reviews-section label,
+    aside.reviews-section textarea,
+    aside.reviews-section button,
+    aside.reviews-section .reply-section textarea,
+    aside.reviews-section .reply-section button {
+        font-size: 14px;
+    }
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .container > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Centrado del título */
+    footer h5 {
+        text-align: center;
+    }
+
+    /* Centrado de la lista de enlaces */
+    footer ul {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*--------------------------------*/
+/* Para pantallas menores a 480px */
+/*--------------------------------*/
+@media (max-width: 480px) {
+    .menu-content-1 video {
+        width: 480px;
+    } 
+    .galeria-imagenes {        
+        justify-content: center;
+        height: auto;
+    }
+    .galeria-imagenes a {
+        flex-basis: 100%;
+        display: flex;
+        flex: 1 1 calc(50% - 20px); /* 2 cartas por fila */
+    }
+
+    .boxbutton button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .news-cards {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .news-cards .card h4 {
+        font-size: 16px;
+    }
+
+    .news-cards .card p {
+        font-size: 14px;
+    }
+    .boxbutton h3 {
+        font-size: 16px;
+    }
+
+    .boxbutton h4 {
+        font-size: 20px;
+    }
+
+    .boxbutton p,
+    .boxbutton button {
+        font-size: 12px;
+    }
+
+    aside.reviews-section {
+        padding: 10px;
+    }
+
+    aside.reviews-section h3 {
+        font-size: 18px;
+    }
+
+    aside.reviews-section .review h4 {
+        font-size: 16px;
+    }
+
+    aside.reviews-section .review p,
+    aside.reviews-section label,
+    aside.reviews-section textarea,
+    aside.reviews-section button,
+    aside.reviews-section .reply-section textarea,
+    aside.reviews-section .reply-section button {
+        font-size: 12px;
+    }
+}
+    
+/*--------------------------------*/
+/* Para pantallas menores a 425px */
+/*--------------------------------*/
+@media (max-width: 425px) {
+    .content ul li {
+        margin: 5px;
+        font-size: 16px;
+    }
+    
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content2 input, .content2 button {
+        width: 100%;
+        margin: 5px;
+    }
+    .menu-content-1 {
+        padding: 0px;
+        width: 425px;
+        overflow: hidden;
+    }
+    .menu-content-1 video {
+        padding: 0px;
+        width: 600px;
+    }
+
+    .card{
+        flex: 1 1 calc(100% - 20px); /* 2 cartas por fila */
+    }
+}
+
+/*------------------------------*/
+/* Para pantallas menores a 375 */
+/*------------------------------*/
+@media (max-width: 375px) {
+    .content a img {
+        width: 80px;
+    }
+    .menu-content-1 {
+        width: 375px;
+        overflow: hidden;
+        padding: 0%;
+    }
+    .menu-content-1 video {
+        width: 800px;
+    }
+}
+
+/*--------------------------------*/
+/* Para pantallas menores a 320px */
+/*--------------------------------*/
+@media (max-width: 320px) {
+    .content {
+        display: block;
+    }
+    .content ul {
+        flex-direction: column;
+    }
+    .menu-content-1 {
+        padding: 0px;
+        width: 320px;
+    }
+
+}
+
+/* ============================= */
+/*      MEDIA QUERIES - PAG 2    */
+/* ============================= */
+
+
+/* Móviles grandes - hasta 768px */
+@media (max-width: 768px) {
+    .contenedor-juego img {
+        max-width: 300px;
+    }
+
+    .contenedor-juego .game-card-detail h4 {
+        font-size: 20px;
+    }
+
+    .contenedor-juego .game-card-detail p {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+
+/* Móviles pequeños - hasta 480px */
+@media (max-width: 480px) {
+    .contenedor-juego img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .contenedor-juego .game-card-detail {
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    .contenedor-juego iframe {
+        max-width: 90%;
+    }
+
+    .contenedor-juego .game-card-detail h4 {
+        font-size: 18px;
+    }
+
+    .contenedor-juego .game-card-detail p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
