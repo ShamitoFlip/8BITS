@@ -14,7 +14,14 @@ body, html {
     position: relative;
     background-color: rgba(0, 0, 0, 0.5); /* Filtro oscuro sobre el fondo */
 }
+.formulario a img {
+    width: 100px;
+    padding: 10px;
+}
 
+.formulario img:hover {
+    transform: scale(1.05);
+}
 .formulario {
     display: flex;
     flex-direction: column;
