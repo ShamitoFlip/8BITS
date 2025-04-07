@@ -15,6 +15,11 @@
         overflow: hidden;
     }
 
+    
+    .card {
+        display: flex;
+        flex: 1 1 calc(20% - 20px);
+    }
 }
 
 /*---------------------------------*/
@@ -66,12 +71,12 @@
     .galeria-imagenes a {
         flex-basis: 30%;
         padding: 10px;
-        flex: 1 1 calc(24% - 20px); /* 2 cartas por fila */
+        flex: 1 1 calc(24% - 20px); 
     }
 
     .card {
         display: flex;
-        flex: 1 1 calc(50% - 20px); /* 2 cartas por fila */
+        flex: 1 1 calc(50% - 20px);
     }
     .boxbutton {
         flex-direction: column;
@@ -313,6 +318,14 @@
         margin: 5px;
         font-size: 16px;
     }
+
+    .content ul {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        font-size: 16px;                  
+    }
+    
     
     .content{
         flex-direction: column;
