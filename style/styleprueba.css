@@ -165,7 +165,7 @@ body, html {
 }
 
 /* Estilo para el video en el fondo */
-.video {
+.videoplay {
     position: absolute;
     top: 0;
     left: 0;
@@ -175,7 +175,7 @@ body, html {
 }
 
 /* Estilo para el video, asegurando que cubra todo el fondo */
-video {
+.videoplay video {
     object-fit: cover; /* Hace que el video cubra todo el fondo */
     width: 100%;
     height: 100%;

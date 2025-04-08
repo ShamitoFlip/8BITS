@@ -102,7 +102,9 @@
         flex-direction: column;
         align-items: center;
     }
-    
+    #accordionFlushExample {
+        display:flex;
+    }
     nav {
         flex-direction: column;
         align-items: center;
@@ -112,11 +114,19 @@
         width: 100%;
         justify-content: center;
         text-align: center;
+        
     }
     
     .content ul {
+        display: flex;
         justify-content: center;
-        
+        margin-bottom: 25px;
+    }
+    .content ul li {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+        font-size: 18px;
     }
     .menu-content-1 {
         flex-direction: column;
@@ -126,6 +136,11 @@
     }
     .menu-content-1 video {
         width: 768px;
+    }
+    .content2{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
     }
     .galeria-imagenes a {
         flex-basis: 45%;
@@ -201,16 +216,79 @@
 /* Para pantallas menores a 425px */
 /*--------------------------------*/
 @media (max-width: 720px) {
-    .content ul li {
-        margin: 5px;
-        font-size: 16px;
+
+    .toogle{
+        display: flex;
+        justify-content: center;
+        
     }
-    
-    .content{
-        flex-direction: column;
+    .navbar{
         align-items: center;
     }
+    .navbar button{
+        border: 0px;
+        flex-direction: column;
+        
+    }
+   
+    .colapso .content3{
+        width: 100%;
+        padding: 0;
+        margin:0;
+        display: flex;
+        justify-content: center;
+    }
+    .content3  ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 10px;
+        gap: 15px;
+        
+    }
+    .content3  li a {
+        margin: 0;
+    }
 
+
+    .busqueda3{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+    .busqueda3 div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .fila a{
+        margin:10px;
+        
+    }
+
+    .content{
+        display:none ;
+    }
+    .content2{
+        display: none;
+    }
+    
+    .content img {
+        display:none ;
+    }
+    
+    .content ul li {
+        display:none ;
+    }
+    
     .content2 {
         flex-direction: column;
         align-items: center;
@@ -250,7 +328,11 @@
         display: flex;
         flex: 1 1 calc(50% - 20px); /* 2 cartas por fila */
     }
-
+    .content3{
+        display: flex;
+        align-items: center;
+        margin-left:80px;
+    }
     .boxbutton button {
         width: 100%;
         font-size: 16px;
@@ -375,7 +457,31 @@
         width: 320px;
     }
 
+   header{
+    width: 100%;
+    max-width: 320px;
+    margin: 0px;
+    padding: 0px;
+    }
+    .colapso{
+        width: 320px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .busqueda3 div input {
+        width: 200px;
+
+    }
+    .fila {
+        display: flex;
+        flex-direction: column;
+    }
+    .fila a {
+        margin: 10px ;
+    }
 }
+
 
 /* ============================= */
 /*      MEDIA QUERIES - PAG 2    */
@@ -423,10 +529,11 @@
         font-size: 14px;
         text-align: center;
     }
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+    }
 }
 
-.content{
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-}
+

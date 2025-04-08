@@ -12,8 +12,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    display: flex;
+    justify-content: center;
+}
 body {
+    width: 100%;
+    max-width: 1920px;
     font-family: "Ubuntu", sans-serif;
     line-height: 1.6;
     background: radial-gradient(circle, #333 0%, #000 100%);
@@ -22,6 +27,9 @@ body {
 /*------------------*/
 /* STYLE HEADER - CSS */
 /*------------------*/
+.toogle{
+    display: none;
+}
 
 header {
     width: 100%;
@@ -52,13 +60,14 @@ nav {
     flex-wrap: wrap;
 }
 
-.content ul {
+.content  ul {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
     gap: 15px;
+    
 
 }
 
@@ -81,7 +90,7 @@ nav {
     transform: scale(1.1);
 }
 
-.content ul li a {
+.content ul li a, .content3 ul li a {
     font-weight: bold;
     text-decoration: none;
     color: white;
@@ -89,9 +98,14 @@ nav {
 
 .content ul li a:hover {
     color: #6A0DAD;
+    
 }
 
-.content2 {
+.content3 ul li a:hover{
+    color: #6A0DAD;
+    transform: scale(1.1);
+}
+.content2, .content3 {
     display: flex;
     align-items: center;
     width: 50%;
@@ -99,7 +113,7 @@ nav {
     flex-wrap: wrap;
 }
 
-.content2 input {
+.content2 input, .busqueda3 input {
     width: 250px;
     height: 40px;
     padding: 8px;
@@ -108,12 +122,13 @@ nav {
     transition: border-color 0.3s ease;
 }
 
-.content2 input:focus {
+
+.content2 input ,.busqueda3 input:focus {
     border-color: #ffffff;
     outline: none;
 }
 
-.content2 button {
+.content2 button, .busqueda3 button {
     padding: 8px 12px;
     margin-left: 10px;
     background-color: #6A0DAD;
@@ -125,12 +140,12 @@ nav {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.content2 button:hover {
+.content2 button, .busqueda3 button:hover {
     background-color: #540b91;
     transform: scale(1.05);
 }
 
-.content2 a {
+.content2 a,.content3 a,.busqueda3 a {
     margin-left: 15px;
     text-decoration: none;
     color: whitesmoke;
@@ -143,8 +158,11 @@ nav {
     color: #6A0DAD;
     transform: scale(1.1);
 }
-
-
+.content3 a:hover{
+    color: #6A0DAD;
+    transform: scale(1.1);
+}
+    
 /*----------------*/
 /* STYLE MENU - CSS */
 /*----------------*/
