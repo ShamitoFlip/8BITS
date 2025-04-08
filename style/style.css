@@ -178,9 +178,16 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 1920px;
     background: radial-gradient(circle, #6A0DAD 0%, #000 90%);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
 }
+
+.menu-content-1 video{
+    width: 100%;
+    max-width: 1920px;
+}
+
 
 
 
@@ -213,7 +220,8 @@ nav {
     padding: 0;
     display: flex;
     justify-content: flex-start;
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     height: 294px;
     overflow: hidden;
     flex-wrap: wrap;
